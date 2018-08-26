@@ -1,0 +1,22 @@
+<header>
+	<div>
+		<br>
+		<h2 align="center"><b>Welcome to RecipeFinder</b></h2>
+		<h4 align="center">Created by <a href="https://ayushexploring.github.io" target="_blank">Ayush Verma</a></h4>
+		<h5 align="center">Powered By Food2Fork.com</h5>
+		<br>
+	</div>
+	<div id="temp">
+		<div id="home-btn">
+			<a href="https://recipefinder-f2f.herokuapp.com"><button class="btn btn-success">Home</button></a>
+		</div>
+		<div id="recipe-search">
+			<%= form_tag recipes_index_path, method: :get, id: 'search' do %>
+				<%= text_field_tag :search , '', placeholder: 'Search Recipe by ingredient' , :required => true %>
+				<%= submit_tag "Search", class: 'btn btn-success' %>
+			<% end %>
+		</div>
+	</div><br>
+	<p>Food2Fork is an ever expanding recipe website. It strives to bring people closer by being able share your favorite meals and recipes with everyone around the world. By combining ingredients and title search, Food2Fork makes finding recipes easy. Food2Fork recipes are from everyday cooks and chefs that have perfected the recipe over time. Food2Fork recipes range from the decadent to the simple for whatever mood you are in. With recipes being added daily there will alway be something new for you to crave.</p>
+	<br>
+</header>	
